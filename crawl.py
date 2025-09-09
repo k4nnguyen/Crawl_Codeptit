@@ -1,6 +1,6 @@
 import sys
 import io
-
+import time
 # Ép output ra UTF-8 (để Java đọc được tiếng Việt)
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8')
 
@@ -78,6 +78,9 @@ for i, text in enumerate(headers):
     run.bold = True
     run.font.size = Pt(11)
     p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+
+#Chờ 5s để codeptit load trạng thái bài
+time.sleep(5)
 
 # ---------------------
 # 3) Lặp qua từng chủ đề
