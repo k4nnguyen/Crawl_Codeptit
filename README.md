@@ -10,7 +10,13 @@ Công cụ cào các bài trên `code.ptit.edu.vn` bằng tài khoản sinh viê
 
 ### Thiết lập môi trường (Windows, PowerShell)
 
-1. Mở Command Prompt tại thư mục dự án
+1. Clone lại dự án
+
+```
+git clone https://github.com/k4nnguyen/Crawl_Codeptit.git
+cd Crawl_Codeptit
+```
+
 2. Tạo và kích hoạt môi trường ảo:
 
 ```
@@ -68,11 +74,7 @@ Nếu đang chạy từ IDE (IntelliJ/VS Code/Eclipse), mở `Java/LoginGUI.java
 
 ### Lỗi thường gặp
 
+- Nếu chạy lần 1 báo lỗi, chờ 10s để codeptit load lại data và thử lại
 - Không có Chrome/Chrome quá cũ: Cài hoặc cập nhật Google Chrome lên bản mới.
 - Bị chặn đăng nhập/2FA/captcha: Thử lại sau, kiểm tra tài khoản, hoặc đăng nhập thủ công trên trình duyệt trước.
 - Môi trường ảo không kích hoạt được (ExecutionPolicy): Chạy PowerShell với quyền Admin và tạm cho phép script: `Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass` rồi kích hoạt lại.
-
-### Góp ý / Mở rộng
-
-- Điều chỉnh danh sách chủ đề cần quét trong `crawl.py` (mảng `TOPICS`).
-- Có thể thêm lựa chọn xuất `CSV/Excel` bên cạnh Word nếu cần.
