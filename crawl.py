@@ -81,7 +81,7 @@ for i, text in enumerate(headers):
 
 #Chờ 5s để codeptit load trạng thái bài
 time.sleep(5)
-
+driver.refresh()
 # ---------------------
 # 3) Lặp qua từng chủ đề
 for topic_id, topic_name in TOPICS:
